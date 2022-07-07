@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Aprendiendo";
+    Layout ="_Layout";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Un Bucle desde la cadena de Url</p>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["NumTimes"]!; i++)
+    {
+        <li>@ViewData["Message"]</li>
+    }
+</ul>
